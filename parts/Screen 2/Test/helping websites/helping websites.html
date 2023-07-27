@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Time's up</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #eee;
+            background-image: url("ff.jpeg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 30%;
+            right: 30%;
+            height: 80px;
+            background-color: #E5BA73;
+            color: #fff;
+            text-align: center;
+            line-height: 80px;
+            font-size: 32px;
+            font-weight: bold;
+            border-radius: 1rem;
+        }
+        header:hover {
+            transform: scale(1.1);
+        }
+        header:active {
+            transform: scale(0.9);
+        }
+        header:nth-child(1) {
+            margin-right: 50px;
+        }
+
+        .square {
+            width: 400px;
+            height: 400px;
+            margin: 50px;
+            padding: 1rem 2rem;
+            /*background-color: #E5BA73;   */
+            background-color: rgba(255, 255, 255, 0.5);
+            font-size: 1.5rem;
+            border: 1px solid #fff;
+            border-radius: 2rem;
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+            /*opacity: 0.5;   */
+        }
+         /*
+        .square:nth-child(1) {
+            margin-right: 50px;
+        }
+        .square:hover {
+            transform: scale(1.1);
+        }
+        .square:active {
+            transform: scale(0.9);
+        }
+             */
+
+        p,h3 {
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            font-size: 50px;
+        }
+        h5{
+            text-align:center;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            color: #E5BA73;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        ul {
+            list-style: none;
+            text-align: center;
+            font-size: 30px;
+        }
+        div {
+            text-align: center;
+            font-size: 30px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>~ Time's Up ~</h1>
+    </header>
+
+    <div class="square">
+        <p onclick="toggleLinks()">HELPING TOOL</p>
+        <div id="links" class="hidden">
+            <a href="https://www.google.com.eg/?hl=ar" target="_blank">Google</a>
+            <br>
+            <a href="https://www.toppr.com/ask/question/molarity-and-molality/" target="_blank">Topper</a>
+            <br>
+            <a href="https://poe.com/ChatGPT" target="_blank">ChatGPT</a>
+            <br>
+        </div>
+    </div>
+
+    <div class="square">
+        <p onclick="toggleList()">REFERENCES</p>
+        <div id="links2" class="hidden2">
+            <a href="https://www.chegg.com/" target="_blank">Chegg</a>
+            <br>
+            <a href="https://homeworkify.net/" target="_blank">Homeworkify</a>
+            <br>
+            <a href="https://homeworkify.net/" target="_blank">Homeworkify</a>
+            <br>
+        </div>
+
+      <!--------------------------------->
+    <script>
+        function toggleLinks() {
+            var linksDiv = document.getElementById("links");
+            if (linksDiv.classList.contains("hidden")) {
+                linksDiv.classList.remove("hidden");
+            } else {
+                linksDiv.classList.add("hidden");
+            }
+        }
+ 
+        function toggleList() {
+            var linksDiv2 = document.getElementById("links2");
+            if (linksDiv2.classList.contains("hidden2")) {
+                linksDiv2.classList.remove("hidden2");
+            } else {
+                linksDiv2.classList.add("hidden2");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body{
+    background-image: url(4.jpg);
+    background-size: cover;
+    height: 100vh;
+
+}
+.main{
+    width: 1270px;
+    height: 400px;
+    /* background-color: aquamarine; */
+    position: absolute;
+    top: 250px;
+    left: 140px;
+}
+.button{
+    width: 230px;
+    height: 380px;
+    background-color: rgba(13, 13, 13, 0.536);
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 20px;
+}
+h3{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 7000;
+    color: rgb(255, 255, 255);
+    
+}

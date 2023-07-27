@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+body{
+    background-image: url(7.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.B{
+    height:500px;
+    width: 900px;
+    color: rgb(6, 29, 29);
+    position: absolute;
+    top: 250px;
+    left: 390px;
+}
+
+.button{
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 250px;
+    color: rgba(250, 245, 245, 0.786);
+    background-color: rgba(0, 0, 0, 0.642);
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+}

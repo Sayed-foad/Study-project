@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+body{
+    background-image: url(2.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.write{
+    background-color: rgba(240, 255, 255, 0.762);
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top: 230px;
+    left: 1000px;
+    border-radius: 10px;
+}
+h2{
+    color: black;
+    font-size: 40px;
+    font-weight: 800px;
+    margin-left: 5px;
+    margin-top: 0;
+    font-family: 'Oswald', sans-serif;
+	margin-bottom: 0;
+}
+p{
+	font-size: 25px;
+	color: black;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+	margin-left: 5px;
+	margin-top: 0;
+}
+.B1{
+    width: 300px;
+    height: 150px;
+    background-color: rgb(160, 247, 10);
+}
+.B2{
+    width: 300px;
+    height: 150px;
+    background-color: aqua;
+}
+button {
+	margin-left: 0;
+  }
+  .btn-10 {
+	width: 220px;
+	height: 80px;
+	color: #fff;
+	border-radius: 30px;
+	padding:0px 25px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: absolute;
+	top: 350px;
+	left: 170px;
+	display: inline-block;
+	 box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+	 7px 7px 20px 0px rgba(0,0,0,.1),
+	 4px 4px 5px 0px rgba(0,0,0,.1);
+	outline: none;
+  }
+  /* 10 */
+  .btn-10 {
+	background: rgb(22,9,240);
+  background: linear-gradient(0deg, rgb(240, 9, 32) 0%, rgb(244, 49, 62) 100%);
+	color: #fbfbfb;
+	border: none;
+	transition: all 0.3s ease;
+	overflow: hidden;
+	font-size: 45px;
+	font-family: 'Oswald', sans-serif;
+
+  }
+  .btn-10:after {
+	position: absolute;
+	content: " ";
+	top: 600px;
+	left: 0px;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease;
+	-webkit-transform: scale(.1);
+	transform: scale(.1);
+  }
+  .btn-10:hover {
+	color: #fff;
+	border: none;
+	background: transparent;
+  }
+  .btn-10:hover:after {
+	background: rgb(250, 74, 74);
+  background: linear-gradient(0deg, rgb(226, 138, 148) 0%,  rgb(239, 98, 98)100%);
+	-webkit-transform: scale(1);
+	transform: scale(1);
+  }
+  .btn-11 {
+	width: 220px;
+	height: 80px;
+	color: #fff;
+	border-radius: 30px;
+	padding: 0px 25px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: absolute;
+	top: 350px;
+	left: 500px;
+	display: inline-block;
+	 box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+	 7px 7px 20px 0px rgba(0,0,0,.1),
+	 4px 4px 5px 0px rgba(0,0,0,.1);
+	outline: none;
+  }
+  /* 11 */
+  .btn-11 {
+	background: rgb(22,9,240);
+  background: linear-gradient(0deg, rgb(240, 9, 32) 0%, rgb(244, 49, 62) 100%);
+	color: #fbfbfb;
+	border: none;
+	transition: all 0.3s ease;
+	overflow: hidden;
+	font-size: 45px;
+	font-family: 'Oswald', sans-serif;
+
+  }
+  .btn-11:after {
+	position: absolute;
+	content: " ";
+	top: 600px;
+	left: 0px;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease;
+	-webkit-transform: scale(.1);
+	transform: scale(.1);
+  }
+  .btn-11:hover {
+	color: #fff;
+	border: none;
+	background: transparent;
+  }
+  .btn-11:hover:after {
+	background: rgb(250, 74, 74);
+  background: linear-gradient(0deg, rgb(226, 138, 148) 0%,  rgb(239, 98, 98)100%);
+	-webkit-transform: scale(1);
+	transform: scale(1);
+  }
+  .btn-12 {
+	width: 220px;
+	height: 80px;
+	color: #fff;
+	border-radius: 30px;
+	padding: 0px 25px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: absolute;
+	top: 500px;
+	left: 330px;
+	display: inline-block;
+	 box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+	 7px 7px 20px 0px rgba(0,0,0,.1),
+	 4px 4px 5px 0px rgba(0,0,0,.1);
+	outline: none;
+  }
+  /* 12 */
+  .btn-12 {
+	background: rgb(22,9,240);
+  background: linear-gradient(0deg, rgb(240, 9, 32) 0%, rgb(244, 49, 62) 100%);
+	color: #fbfbfb;
+	border: none;
+	transition: all 0.3s ease;
+	overflow: hidden;
+	font-size: 45px;
+	font-family: 'Oswald', sans-serif;
+
+  }
+  .btn-12:after {
+	position: absolute;
+	content: " ";
+	top: 600px;
+	left: 0px;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease;
+	-webkit-transform: scale(.1);
+	transform: scale(.1);
+  }
+  .btn-12:hover {
+	color: #fff;
+	border: none;
+	background: transparent;
+  }
+  .btn-12:hover:after {
+	background: rgb(250, 74, 74);
+  background: linear-gradient(0deg, rgb(226, 138, 148) 0%,  rgb(239, 98, 98)100%);
+	-webkit-transform: scale(1);
+	transform: scale(1);
+  }

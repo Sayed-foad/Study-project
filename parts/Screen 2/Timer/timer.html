@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer Counter</title>
+
+    <style>
+        .timer {
+            font-size: 8rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        button {
+            margin: 0 1rem;
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 2rem;
+            background-color: #1abc9c;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .message {
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+            display: none;
+        }
+
+        .rounds {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+
+        .timer {
+            font-size: 8rem;
+            text-align: center;
+            margin-top: 4rem;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        button {
+            margin: 0 1rem;
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 2rem;
+            background-color: #1abc9c;
+            color: #fff;
+            cursor: pointer;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        
+
+        /**/
+
+
+        body {
+            background-color: #eee;
+            background-image: url("5.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .header,
+        .footer {
+            background-color: #1abc9c;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+            .header h1,
+            .footer h1 {
+                margin: 0;
+                font-size: 2rem;
+            }
+
+        .timer {
+            font-size: 8rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        button {
+            margin: 0 1rem;
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 2rem;
+            background-color: #E5BA73;
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+        button:active {
+            transform: scale(0.9);
+        }
+
+
+        .message {
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+            display: none;
+        }
+
+        .rounds {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+            margin: 0 10px;
+            text-align: center;
+            width: 400px;
+            margin: 0 auto;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .round {
+            margin: 0 10px;
+            padding: 5px 10px;
+            font-size: 1.2rem;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        #cubic {
+            width: 300px;
+            margin: 0 auto;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+        }
+
+        #to_do{
+            color:black;
+            font-size: 1.5rem;
+            font: bold;
+        }
+        #help{
+            width: 500px;
+            height: 130px;
+            background-color: rgba(21, 21, 21, 0.61);
+            position: absolute;
+            left: 515px;
+            top: 450px;
+            border-radius: 20px;
+        }
+        
+        img{
+            width: 88px;
+            height: 90px;
+            margin-top: 20px;
+            margin-left: 20px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="timer">
+        <span class="minutes">00</span>:<span class="seconds">00</span>
+    </div>
+    <div class="buttons">
+        <button class="minutes-btn" data-time="1800">30 Minutes</button>
+        <button class="minutes-btn" data-time="1500">25 Minutes</button>
+        <button class="minutes-btn" data-time="600">10 Minutes</button>
+        <button class="minutes-btn" data-time="300">5 Minutes</button>
+    </div>
+
+    <div class="message"></div>
+    <br />
+    <h2 class="rounds">~ Rounds ~</h2>
+    <br />
+    <div class="rounds" id="cubic">
+
+        <ul class="round"></ul>
+    </div>
+   
+    <br />
+    <div id="help">
+        
+       <a href="https://www.toppr.com/"> <img src="https://static-cf.toppr.com/marketing/6c448a3/images/toppr-new-logo.svg" alt=""></a>
+       <a href="https://poe.com/ChatGPT"> <img src="GPt.png" alt=""> </a>
+       <a href="https://www.khanacademy.org/"><img src="khan.png" alt=""></a>
+       <a href="https://www.google.com/?&bih=796&biw=1536&hl=en"><img src="Google.png" alt=""></a>
+        
+       
+    </div>
+    
+    <!-- <a href="time up trials 2 todo list.html" class="rounds" id="to_do">Let's make your To-Do list!!'</a> -->
+
+    <script>
+        const timerDisplay = document.querySelector('.timer');
+        const buttons = document.querySelectorAll('.minutes-btn');
+        const message = document.querySelector('.message');
+        const roundsList = document.querySelector('.rounds ul');
+        let countdown;
+        let rounds = 0;
+
+        function timer(seconds) {
+
+            clearInterval(countdown);
+            rounds++;
+            roundsList.innerHTML += `<li>${rounds} - ${seconds / 60} minutes</li>`;
+
+            const now = Date.now();
+            const then = now + seconds * 1000;
+            displayTimeLeft(Math.round((then - now) / 1000));
+
+            countdown = setInterval(() => {
+                const secondsLeft = Math.round((then - Date.now()) / 1000);
+                if (secondsLeft < 0) {
+
+                    clearInterval(countdown);
+                    timerDisplay.querySelector('.message').textContent = 'Good job bro^^!';
+                    return;
+                }
+                displayTimeLeft(secondsLeft);
+            }, 1000);
+        }
+
+        function displayTimeLeft(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const remainderSeconds = seconds % 60;
+            const display = `${minutes < 10 ? '0' : ''}${minutes}:${remainderSeconds < 10 ? '0' : ''}${remainderSeconds}`;
+            document.title = display;
+            timerDisplay.querySelector('.minutes').textContent = minutes;
+            timerDisplay.querySelector('.seconds').textContent = remainderSeconds;
+        }
+
+
+
+        buttons.forEach(button => button.addEventListener('click', function () {
+            const seconds = parseInt(this.dataset.time);
+            timer(seconds);
+            const roundList = document.querySelector('.rounds');
+            if (roundList.children.length === 0 || !roundList.lastChild.textContent.includes(new Date().toLocaleDateString())) {
+                addRoundToList();
+            }
+        }));
+
+        startRecordBtn.addEventListener('click', function () {
+            const seconds = parseInt(document.querySelector('.minutes-btn.active').dataset.time);
+            const roundName = prompt('Enter round name:');
+            if (roundName) {
+                startRecordBtn.disabled = true;
+                timer(seconds, roundName);
+            }
+        });
+
+        let roundNumber = 0;
+
+        function addRoundToList() {
+            const roundList = document.querySelector('.rounds ul');
+            roundNumber++;
+            const round = document.createElement('li');
+            const date = new Date();
+            round.textContent = `${roundNumber}. Round - ${date.toLocaleDateString()} ${date.toLocaleTimeString()}`;
+            roundList.appendChild(round);
+        }
+
+    </script>
+</body>
+</html>
